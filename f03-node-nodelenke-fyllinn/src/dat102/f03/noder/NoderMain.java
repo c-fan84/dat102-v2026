@@ -15,12 +15,20 @@ public class NoderMain {
 		
 		//1a) Vi begynner med å lage og sette inn det som blir siste node, [Espen|..]
 		// TODO
+        Node<String> forste = new Node<>("Espen");
+        skrivUtListe(forste);
 		
 		//1b) Deretter lage nest siste node [Pål|..], og la den peke på [Espen|..]
 		// TODO
+        temp = new Node<>("Pål");
+        temp.neste = forste;
+        forste = temp;
 		
 		//1c) Deretter lage forste node [Per|..], og la den peke på [Pål|..]
 		// TODO
+        temp = new Node<>("Per");
+        temp.neste = forste;
+        forste = temp;
 		
 		//2) Skrive ut innhold/element i alle nodene i listen (bruk hjelpemetoden nedenfor)
 		// TODO
